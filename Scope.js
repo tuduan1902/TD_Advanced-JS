@@ -31,6 +31,8 @@ trong phạm vi của nó và bên ngoài nó
             }
             return increase
         }
+        const increase1 = makeCouter()
+        
 
 # Tóm tắt
 */
