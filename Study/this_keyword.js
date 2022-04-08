@@ -1,23 +1,23 @@
 // Từ khóa this trong Javasript đề cập đến đối tượng mà nó thuộc về 
 // Đặc Tính
 // 1. Trong một phương thức, this tham chiếu tới đối tượng truy cập method(trước dấu chấm)
-// const iphone7 = {
-//     // Thuộc tính - Property
-//     name:  'iPhone  7',
-//     color: 'Pink',
-//     weight: 300,
-//     //  Phương thức - Method
-//     takePhoto() {
-//         console.log('Take a photo');
-//     },
-//     objChild: {
-//         name:'Object child',
-//         methodChild() {
-//             console.log(this)
-//         }
-//     }
-// }
-// iphone7.objChild.methodChild()
+const iphone7 = {
+    // Thuộc tính - Property
+    name:  'iPhone  7',
+    color: 'Pink',
+    weight: 300,
+    //  Phương thức - Method
+    takePhoto() {
+        console.log('Take a photo');
+    },
+    objChild: {
+        name:'Object child',
+        methodChild() {
+            console.log(this)
+        }
+    }
+}
+iphone7.objChild.methodChild()
 
 // 2. Đứng ngoài method, this tham chiếu tới đối tượng global
 // Lưu ý 

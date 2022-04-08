@@ -1,5 +1,5 @@
 // Define: Closure là một hàm có thể ghi nhớ nơi nó được tạo 
-// và truy cập được biến ở bên ngoài phạm vi của nó
+// và truy cập được biến ởbên ngoài phạm vi của nó
 
 /*
 ## Ứng dụng
