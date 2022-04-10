@@ -34,7 +34,24 @@ const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
 const app = (() => {
-    const  cars = []
+    const  cars = ['BMW']
+    const root = $('#root')
 
-    
+    return {
+        add(car) {
+            car.push(car)
+        },
+        delete(index) {
+            cars.splice(index, 1)
+        },
+        render() {
+            const html = cars.map(car => `
+                <li>${car}</li>
+            `)
+            .join('')
+
+            root.innerHTML = html
+        }
+
+    }
 })
